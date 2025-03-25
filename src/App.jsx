@@ -1,4 +1,3 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React from "react";
 import Navbar from "./components/NavBar";
 import HeroSection from "./components/HeroSection";
@@ -10,10 +9,10 @@ import MainPage from "./components/MainPage";
 
 const App = () => {
   return (
-    <Router>
+    <>
       <Navbar />
       <main className="mt-16">
-        {/* Sections with ids for smooth scrolling */}
+        {/* Sections with IDs for smooth scrolling */}
         <section id="hero">
           <HeroSection />
         </section>
@@ -33,7 +32,7 @@ const App = () => {
           <Contact />
         </section>
       </main>
-    </Router>
+    </>
   );
 };
 
