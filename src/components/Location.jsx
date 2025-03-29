@@ -1,29 +1,28 @@
-import REact from "react";
-import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import React from "react";
+import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 
-const containerStyle= {
+const containerStyle = {
   width: "100%",
   height: "400px",
 };
 
-// coordinates for Casa Coziei
-
-const center = {
-  lat: 45.334479,  // Latitude
-  lng: 24.281510,  // Longitude
+// 🔹 Set the fixed location for Casa Coziei
+const placeLocation = {
+  lat: 45.334479,
+  lng: 24.281510,
 };
 
 const Location = () => {
+  const { isLoaded } = useJsApiLoader({
+    googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY, // Your API Key
+  });
+
+  if (!isLoaded) return <p>Loading Map...</p>;
+
   return (
-    <LoadScript googleMapsApiKey="AIzaSyAra9SO2dfFmwrHGK-1ihn6AQNUc8XnRag">
-      <GoogleMap
-        mapContainerStyle={containerStyle}
-        center={center} // Set map center to CasaCoziei coordinates
-        zoom={15} // Adjust zoom level as per your need
-      >
-        <Marker position={center} /> {/* Add a marker at CasaCoziei location */}
-      </GoogleMap>
-    </LoadScript>
+    <GoogleMap mapContainerStyle={containerStyle} center={placeLocation} zoom={15}>
+      <Marker position={placeLocation} />
+    </GoogleMap>
   );
 };
 
