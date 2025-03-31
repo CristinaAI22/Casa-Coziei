@@ -1,5 +1,6 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 import food2 from "../assets/food2.jpg";
 import food3 from "../assets/food3.jpg";
 import pergola from "../assets/food4.jpg";
