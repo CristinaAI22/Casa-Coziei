@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
-import logo from "../assets/logo.png";
+import { Menu, X } from "lucide-react"; // Icons for the hamburger menu
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,6 +15,7 @@ export default function Navbar() {
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
           <ul className="hidden md:flex space-x-6">
+            {/* Replace Link with anchor tags for smooth scrolling */}
             <li>
               <a href="#about" className="hover:text-gray-600">
                 About
@@ -40,39 +40,24 @@ export default function Navbar() {
         </div>
         {isOpen && (
           <ul className="md:hidden flex flex-col space-y-4 pb-4">
+            {/* Mobile menu using anchor tags */}
             <li>
-              <a
-                href="#about"
-                className="block py-2"
-                onClick={() => setIsOpen(false)}
-              >
+              <a href="#about" className="block py-2" onClick={() => setIsOpen(false)}>
                 About
               </a>
             </li>
             <li>
-              <a
-                href="#gallery"
-                className="block py-2"
-                onClick={() => setIsOpen(false)}
-              >
+              <a href="#gallery" className="block py-2" onClick={() => setIsOpen(false)}>
                 Gallery
               </a>
             </li>
             <li>
-              <a
-                href="#location"
-                className="block py-2"
-                onClick={() => setIsOpen(false)}
-              >
+              <a href="#location" className="block py-2" onClick={() => setIsOpen(false)}>
                 Location
               </a>
             </li>
             <li>
-              <a
-                href="#contact"
-                className="block py-2"
-                onClick={() => setIsOpen(false)}
-              >
+              <a href="#contact" className="block py-2" onClick={() => setIsOpen(false)}>
                 Contact
               </a>
             </li>
