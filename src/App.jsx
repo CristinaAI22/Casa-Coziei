@@ -1,18 +1,18 @@
 import React from "react";
-import Navbar from "./components/NavBar";
+import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
-import About from "./components/About";
+import About from "./sections/About";
 import Location from "./components/Location";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
 import MainPage from "./components/MainPage";
+import ScrollToTopButton from "./components/ScrollToTopBtn";
 
 const App = () => {
   return (
     <>
-      <Navbar />
-      <main className="mt-16">
-        {/* Sections with IDs for smooth scrolling */}
+      <main className="pt-0">
+        <Header />
         <section id="hero">
           <HeroSection />
         </section>
@@ -32,6 +32,7 @@ const App = () => {
           <Contact />
         </section>
       </main>
+      <ScrollToTopButton />
     </>
   );
 };

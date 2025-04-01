@@ -18,7 +18,7 @@ export default function MainPage() {
 
       {/* social media */}
       <div className="mt-6 flex space-x-6">
-      <a
+        <a
           href="https://www.facebook.com/profile.php?id=61560212213023&locale=ro_RO"
           target="_blank"
           rel="noopener noreferrer"

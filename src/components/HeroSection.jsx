@@ -25,16 +25,16 @@ export default function HeroSection() {
   ];
 
   return (
-    <section className="mt-16 w-full">
+    <section className="w-full max-w-[1100px] mx-auto px-1 sm:px-2 md:px-4 mt-2">
       <Carousel
-        showArrows={true} // Enables navigation arrows
-        showThumbs={false} // Hides thumbnails
-        infiniteLoop={true} // Loops images infinitely
-        autoPlay={true} // Auto-plays images
-        showStatus={false} // Hides the slide number indicator
-        transitionTime={1000} // Sets fade animation duration (in ms)
-        animationHandler="fade" // Enables fade effect instead of slide
-        className="max-w-lg sm:max-w-2xl md:max-w-4xl mx-auto"
+        showArrows={true}
+        showThumbs={false}
+        infiniteLoop={true}
+        autoPlay={true}
+        showStatus={false}
+        transitionTime={1000}
+        animationHandler="fade"
+        className="rounded-xl overflow-hidden shadow-lg"
       >
         {images.map((item, index) => (
           <div key={index} className="flex justify-center items-center p-2">
