@@ -1,69 +1,59 @@
 import React, { useState } from "react";
-import axios from "axios";
+import responses from "../data/responses"; // Import your data from responses.js
 
 const Chatbot = () => {
-  const [message, setMessage] = useState("");
-  const [chatHistory, setChatHistory] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [messages, setMessages] = useState([]);
 
-  // function to handel sending message to the backend
-  const sendMessage = async () => {
-    if (message.trim() === "") return;
-
-    setLoading(true);
-    // update the chat history with the user's message
-
-    setChatHistory([...chatHistory, { sender: "user", message }]);
-
-    try {
-      // Send message to your backend (we'll set up the backend later)
-      const response = await axios.post("http://localhost:5000/api/query", {
-        message,
-      });
-
-      //   update chat hostory with bot's response
-      setChatHistory([
-        ...chatHistory,
-        { sender: "user", message },
-        { sender: "bot", message: response.data.reply },
+  const sendPredefinedResponse = (key) => {
+    const response = responses.find((item) => item.key === key);
+    if (response) {
+      setMessages((prevMessages) => [
+        ...prevMessages,
+        {
+          text: response.answer.en, // Change to 'ro' for Romanian if needed
+          sender: "bot",
+        },
       ]);
-    } catch (error) {
-      console.log("Error sending message:", error);
+    } else {
+      console.log("Response not found for key:", key);
     }
-    setLoading(false);
-    setMessage("");
   };
 
   return (
-    <div className="w-full max-w-lg p-6 bg-white shadow-lg rounded-lg border border-gray-200">
-      <div className="flex flex-col space-y-4 h-96 overflow-y-auto p-3 bg-gray-50 rounded-lg mb-4">
-        {/* Chat History */}
-        {chatHistory.map((chat, index) => (
-          <div
-            key={index}
-            className={`p-2 rounded-md ${chat.sender === 'user' ? 'bg-blue-100 self-end' : 'bg-gray-200 self-start'}`}
-          >
-            <p className="text-sm text-gray-800">{chat.message}</p>
-          </div>
-        ))}
-        {loading && <p className="text-center text-gray-600">Loading...</p>}
+    <div className="chatbot-container w-[350px] p-4 bg-white border border-gray-300 rounded-lg shadow-lg">
+      <div className="button-container mb-4">
+        {/* List of buttons at the top */}
+        <button
+          className="w-full bg-blue-500 text-white py-2 px-4 rounded-md mb-2 hover:bg-blue-600"
+          onClick={() => sendPredefinedResponse("roxana_info")}
+        >
+          Who is Roxana?
+        </button>
+        <button
+          className="w-full bg-blue-500 text-white py-2 px-4 rounded-md mb-2 hover:bg-blue-600"
+          onClick={() => sendPredefinedResponse("tibi_info")}
+        >
+          Who is Tibi?
+        </button>
+        <button
+          className="w-full bg-blue-500 text-white py-2 px-4 rounded-md mb-2 hover:bg-blue-600"
+          onClick={() => sendPredefinedResponse("menu_today")}
+        >
+          What's on the menu today?
+        </button>
+        {/* Add more buttons as needed */}
       </div>
 
-      {/* Input Box */}
-      <div className="flex items-center space-x-2 mt-4">
-        <input
-          type="text"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          placeholder="Ask me something..."
-          className="flex-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-        />
-        <button
-          onClick={sendMessage}
-          className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400"
-        >
-          Send
-        </button>
+      <div className="chat-box h-[300px] overflow-y-auto mb-4 p-2 bg-gray-100 rounded-lg">
+        {/* Display messages (answers) below */}
+        {messages.map((message, index) => (
+          <div
+            key={index}
+            className={`message p-2 mb-2 rounded-lg ${message.sender === "bot" ? "bg-green-200 text-left" : "bg-blue-200 text-right"}`}
+          >
+            {message.text}
+          </div>
+        ))}
       </div>
     </div>
   );
