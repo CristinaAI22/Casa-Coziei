@@ -166,7 +166,52 @@ Everything is made with natural ingredients.`
       ro: "Poți comanda espresso sau cafea la ibric, în funcție de preferință.",
       en: "You can order espresso or traditional pot-style coffee, depending on your preference."
     }
-  }
+  },
+  { key: "how_to_get_there",
+    question: {
+      ro: "Cum pot ajunge la Casa Coziei?",
+      en: "How can I get to Casa Coziei?"
+    },
+    answer: {
+      ro: "Casa Coziei se află în satul Văratica, aproape de orașul Brezoi. După ce treci de Brezoi, urmează indicatoarele spre Văratica. Poți folosi Google Maps pentru 'Casa Coziei' și vei ajunge direct.",
+      en: "Casa Coziei is located in the village of Văratica, near the town of Brezoi. After passing through Brezoi, follow signs to Văratica. You can use Google Maps and search for 'Casa Coziei' to get there directly."
+    }
+  },
+   
+  {
+    key: "parking",
+    question: {
+      ro: "Unde pot parca?",
+      en: "Where can I park?"
+    },
+    answer: {
+      ro: "Avem locuri de parcare gratuite chiar în fața casei. Este spațiu suficient pentru mașinile oaspeților.",
+      en: "We have free parking spots right in front of the house. There’s plenty of room for guests' cars."
+    }
+  },
+  {
+    key: "vegetarian_options",
+    question: {
+      ro: "Există opțiuni vegetariene?",
+      en: "Are there vegetarian options?"
+    },
+    answer: {
+      ro: "Da! Gătim cu drag și pentru vegetarieni – folosim legume proaspete din grădină și avem mereu opțiuni delicioase fără carne.",
+      en: "Yes! We love cooking for vegetarians too – we use fresh veggies from the garden and always have delicious meat-free options."
+    }
+  },
+  {
+    key: "reservations",
+    question: {
+      ro: "Se pot face rezervări?",
+      en: "Can I make a reservation?"
+    },
+    answer: {
+      ro: "Desigur! Ne poți contacta pe WhatsApp pentru a face o rezervare. Ne bucurăm să știm din timp că vii!",
+      en: "Of course! You can contact us on Facebook or by phone to make a reservation. We're happy to know in advance you're coming!"
+    }
+  },
+
 ];
 
 export default responses;
