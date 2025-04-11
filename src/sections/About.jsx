@@ -36,12 +36,14 @@ export default function About() {
           frmusețea simplă a naturii și a tradițiilor și vrem să împărtățim cu
           oaspeții noștri bucatele gătite cu cel mai mare drag și respect.
           <br />
+          <br />
           Gospodăria noastră a crescut odată cu fetița noastră, care avea 4 ani
           când ne-am mutat aici, iar acum este o domnișoară. Din grijă pentru ce
           mâncăm, am investit timp și resurse pentru a ne asigura o bază de
           produse bio (legume, fructe, ouă, carne de pasăre și porc) pe care
           ulterior am început să o folosim pentru a ne crea o adresă în materie
           de gatsronomie locală.
+          <br />
           <br />
           Ne propunem să oferim mâncare de cea mai bună calitate, gătită din
           produse cât mai naturale, chiar la noi acasă. Suntem mai degrabă un
@@ -127,7 +129,7 @@ export default function About() {
         <div className="md:w-1/2">
           <h2 className="text-2xl font-bold text-primary mb-4">Despre Tibi</h2>
           <p className="text-gray-700 text-base leading-relaxed text-justify">
-            Inventiv, amuzant, tăcut și liniștit, Tibi este partenerul și soțul{" "}
+            Inventiv, amuzant, tăcut și liniștit, Tibi este partenerul și soțul
             <em>Roxanei</em>. Împreună au construit familia, gospodăria, casa,
             ideea de <em>gastronomie locală</em> la ei în sat. Autodidact și
             handyman, el se ocupă, atât cât îi permite timpul, de plantarea din
