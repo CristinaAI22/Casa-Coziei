@@ -17,11 +17,12 @@ A mobile-first, single-page website built for a local Romanian entrepreneur to p
 - **Libraries:** React Icons, React Hooks  
 - **Tools:** Git, GitHub, Figma
 
-## 📷 Preview
 
 ## 📷 Preview
 
-[![Casa Coziei Screenshot](./public/assets/screenshot.png)](./public/assets/screenshot.png)
+## 📷 Preview
+
+[![Casa Coziei Screenshot](./screenshot.png)](./screenshot.png)
 
 ## 📁 Project Structure (Key Files)
 
