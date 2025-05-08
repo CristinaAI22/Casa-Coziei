@@ -19,7 +19,7 @@ A mobile-first, single-page website built for a local Romanian entrepreneur to p
 
 ## 📷 Preview
 
-![Casa Coziei Screenshot](https://mariucao.github.io/casa-coziei/screenshot.png)
+![Casa Coziei Screenshot](https://mariucao.github.io/Casa-Coziei/screenshot.png)
 
 
 
