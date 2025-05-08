@@ -19,7 +19,10 @@ A mobile-first, single-page website built for a local Romanian entrepreneur to p
 
 ## 📷 Preview
 
-[![Casa Coziei Screenshot](./screenshot.png)](./screenshot.png)
+## 📷 Preview
+
+[![Casa Coziei Screenshot](/screenshot.png)](/screenshot.png)
+
 
 ## 📁 Project Structure (Key Files)
 
