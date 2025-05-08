@@ -6,4 +6,5 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   base: '/Casa-Coziei/',
   plugins: [react(), tailwindcss()],
+  base: "https://github.com/CristinaAI22/Casa-Coziei.git",
 });
