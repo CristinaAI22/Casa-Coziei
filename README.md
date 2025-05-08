@@ -1,12 +1,75 @@
-# React + Vite
+# Casa Coziei 🍲  
+A mobile-first, single-page website built for a local Romanian entrepreneur to promote and grow her traditional food business. Designed for clarity, speed, and usability, the app showcases traditional home-cooked meals and improves customer interaction with a custom chatbot.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Features
 
-Currently, two official plugins are available:
+- ⚡ **Mobile-First Design** – Fully responsive layout for mobile and tablet users
+- 🧭 **Single-Page Navigation** – Scroll-based structure for intuitive browsing
+- 🛠️ **React + Vite** – Modern stack with fast performance
+- 🎨 **Tailwind CSS** – Clean, maintainable UI styling
+- 💬 **Mini Chatbot (RO + EN)** – Custom chatbot for predefined questions, available in both Romanian and English
+- 📍 **Google Maps Integration** – Embedded map for easy location access
+- 🤖 **AI Integration (Planned)** – Future enhancement: lightweight AI (e.g., smart FAQs or menu suggestions)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧑‍💻 Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend:** React, Vite, Tailwind CSS  
+- **Libraries:** React Icons, React Hooks  
+- **Tools:** Git, GitHub, Figma
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📷 Preview
+
+## 📷 Preview
+
+[![Casa Coziei Screenshot](./public/assets/screenshot.png)](./public/assets/screenshot.png)
+
+## 📁 Project Structure (Key Files)
+
+Casa-Coziei/
+│
+├── public/
+│
+├── src/
+│ ├── assets/ # Images, logo, screenshot
+│ ├── components/ # Chatbot, Header, HeroSection, etc.
+│ ├── data/ # Chatbot response logic
+│ ├── sections/ # About section and future content
+│ ├── App.jsx # Main page layout
+│ └── main.jsx # App entry point
+├── README.md
+└── ...
+
+
+## 🌱 Built For
+
+This project was created in collaboration with a full-stack developer to support a **local entrepreneur’s food business**. It delivers a modern, simple, and functional web presence with bilingual chatbot support to help build customer engagement.
+
+## 💡 Future Enhancements
+
+- Lightweight AI: smart search or dynamic chatbot replies  
+- Basic online ordering system  
+- Full content localization  
+- Admin dashboard for menu/content updates
+
+## 📬 Contact
+
+For feedback or collaboration:  
+📧 onica.mariuca@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/măriuca-onică/)
+
+---
+
+**[Live Demo – Coming Soon]**
+
+## 🚀 Features
+
+- ⚡ **Mobile-First Design** – Fully responsive layout for mobile and tablet users  
+- 🧭 **Single-Page Navigation** – Scroll-based structure for intuitive browsing  
+- 🛠️ **React + Vite** – Modern stack with fast performance  
+- 🎨 **Tailwind CSS** – Clean, maintainable UI styling  
+- 💬 **Mini Chatbot (RO + EN)** – Custom chatbot for predefined questions, available in both Romanian and English  
+- 🖼️ **Lazy-Loaded Gallery** – Improves performance by loading images only as needed  
+- 📍 **Google Maps Integration** – Embedded map for easy location access  
+- 🤖 **AI Integration (Planned)** – Future enhancement: lightweight AI (e.g., smart FAQs or menu suggestions)
+
+- 🖼️ **Lazy-Loaded, Lightbox Gallery** – Optimized image gallery with lazy loading and fullscreen lightbox browsing, improving UX and performance
