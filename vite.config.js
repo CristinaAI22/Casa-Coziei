@@ -5,5 +5,5 @@ import tailwindcss from "@tailwindcss/vite";
 // ✅ Correct config with base + plugins
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/Casa-Coziei/",
+  base: "/La-Virgiloaia-n-tinda/",
 });

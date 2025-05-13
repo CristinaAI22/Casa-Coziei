@@ -8,7 +8,7 @@ export default function MainPage() {
       className="flex flex-col items-center justify-center text-center py-20 px-4 bg-gradient-to-r from-yellow-500 to-orange-500"
     >
       <h2 className="text-4xl md:text-5xl font-bold text-white">
-        Bine ați venit la Casa Coziei!
+        Bine ați venit la Virgiloaia-n tindă!
       </h2>
       {/* short description */}
       <p className="mt-4 text-lg text-white">

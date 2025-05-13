@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo-nou-2.png";
 
 const navLinks = [
   { label: "Despre", id: "about" },
@@ -16,7 +16,7 @@ export default function Header() {
     <header className="flex items-center justify-between px-1 sm:px-2 md:px-4 py-4 bg-white z-50 w-full max-w-[1100px] mx-auto">
       {/* Logo */}
       <div className="flex items-center space-x-2">
-        <img src={logo} alt="Casa Coziei Logo" className="h-12 w-auto" />
+        <img src={logo} alt="Casa Coziei Logo" className="h-50 w-auto" />
       </div>
 
       {/* Desktop Nav */}

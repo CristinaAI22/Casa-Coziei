@@ -1,4 +1,4 @@
-# Casa Coziei 🍲  
+# La Virgiloaia-n tinda 🍲  
 A mobile-first, single-page website built for a local Romanian entrepreneur to promote and grow her traditional food business. Designed for clarity, speed, and usability, the app showcases traditional home-cooked meals and improves customer interaction with a custom chatbot.
 
 ## 🚀 Features
@@ -19,13 +19,12 @@ A mobile-first, single-page website built for a local Romanian entrepreneur to p
 
 ## 📷 Preview
 
-![Casa Coziei Screenshot](https://mariucao.github.io/Casa-Coziei/screenshot.png)
 
 
 
 ## 📁 Project Structure (Key Files)
 
-Casa-Coziei/
+la-virgiloaia-n-tinda/
 │
 ├── public/
 │
